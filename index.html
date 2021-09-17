@@ -28,65 +28,38 @@
                     <address class="author"><a rel="author" href="https://jeffreypost.dev">Jeffrey Post</a></address>
                     <time pubdate datetime="2021-09-17" title="September 17th, 2021">September 17th, 2021</time>
                 </div>        
+<br><br>
+Link to <a rel="author" href="https://renkulab.io/gitlab/jeffrey.post/ssa_hiv_ml/-/blob/master/POST_Thesis_2.pdf">Master's Thesis</a>                   
             </section>
             <section id="firstmenuitem">
                 <section class="center">
-                    <h6>A longitudinal continuation of original cross-sectional study:</h6>
-                    <img src="images/Cross-Sectional-Vs.-Longitudinal-Study-V01.jpg"  height="310" width="510">
-                    <p>"Clusters of sub-Saharan African countries based on sociobehavioural characteristics and associated HIV incidence"</p>
+                    <h5>Sub-Saharan African continent</h5>
+                    <ul>
+                        <li>Exceedingly diverse in terms of sociobehavioral characteristics</li>
+                        <li>Reflected in wide variations in levels of HIV epidemics</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h5>Previous research</h5>
+                    <ul>
+                        <li><h6>Limited geographical range:</h6></li>
+                        <ul>
+                            <li>Single countries</li>
+                            <li>single regions</li>
+                            <li>Specific key populations</li>
+                        </ul>
+                        <li><h6>Limited range of risk-factors:</h6></li>
+                        <ul>
+                            <li>Narrow set of risk factors</li>
+                            <li>Specific HIV-related attributes</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h6>"Clusters of sub-Saharan African countries based on sociobehavioural characteristics and associated HIV incidence"</h6>
                     <p class="small">Aziza Merzouki, Janne Estill, Erol Orel, Kali Tal, Olivia Keiser</p>
                     <p class="smallitalic"><a href="https://doi.org/10.1101/620450">doi: https://doi.org/10.1101/620450</a></p>
-                </section>
-                <section class="center">
-                    <h6>Review of original cross-sectional study:</h6>
-                    <style> 
-                        .colcontainer{
-                            display: flex;
-                        }
-                        .coll{
-                            flex: 1;
-                        }
-                        </style>
-                        
-                        <div class="colcontainer">
-                        
-                        <div class="r-frame">
-                        <p>Why?</p>
-                        <ul class="small">
-                            <li>Wide variation of HIV incidence in SSA</li>
-                            <li>Substantial SB heterogeneity</li>
-                            <li>Investigate link between the two</li>
-                        </ul>
-                        </div>
-                        
-                        <div class="r-frame">
-                        <p>Methods</p>
-                        <ul class="small">
-                            <li>Most recent DHS data for 29 SSA countries</li>
-                            <li>48 behavioural and HIV related indicators</li>
-                            <li>PCA:
-                                <ul class="smallitalic">
-                                    <li>Visualize country similarities on reduced PCA space</li>
-                                    <li>Identify indicators that contribute most to variance in SB space</li>
-                                </ul>
-                            </li>
-                            <li>Cluster similar countries together</li>
-                            <li>Compare HIV incidence within and between each clusters</li>
-                        </ul>
-                        </div>
-
-                        <div class="r-frame">
-                        <p>Results</p>
-                        <ul class="small">
-                            <li>3 clusters</li>
-                            <li>HIV incidence mostly similar within each cluster</li>
-                            <li>HIV incidence mostly different between each clusters</li>
-                        </ul>
-                        </div>     
-                        </div>                   
-                </section>
-                <section class="center">
-                    <h6>Review of original cross-sectional study (2):</h6>
+                    <h6>Main findings:</h6>
                         <div class="colcontainer">
                         
                         <div class="r-frame">
@@ -101,50 +74,41 @@
                     </div>                   
                 </section>                
                 <section class="center">
-                    <h6>2 main limitations of cross-sectional study</h6>
+                    <h6>Main limitations</h6>
                     <ul>
-                        <li>Nationally-aggregated data prone to ecological fallacy</li>
-                        <li class="r-frame">Impossible to determine precedence and causality between SB characteristics and HIV incidence</li>
+                        <li>Impossible to determine precedence and causality between SB characteristics and HIV incidence</li>
+                        <li>Epidemiology of HIV progress over many years/decades</li>
                     </ul>
                 </section>
                 <section class="center">
-                    <h6>Reason for a longitudinal study</h6>
+                    <h6>In this study:</h6>
                     <ul>
-                        <li>Evolution of those 29 countries over time in SB space</li>
-                        <li>Evolution of HIV incidence over the same period</li>
+                        <li>Evolution of sociobehavioral characteristics of 29 countries over time</li>
+                        <li>Evolution of HIV transmission dynamics over the same time period</li>
                         <li>Explore link between the two</li>
                     </ul>
                 </section>  
-                <section class="center">
-                    <img src="../ssa_hiv_ml/markdown/writing/2_figure4_1.png">
-                </section>   
-                <section>
-                    <h2>The Lorenz Equations</h2>
-                    \[\begin{aligned}
-                    \dot{x} &amp; = \sigma(y-x) \\
-                    \dot{y} &amp; = \rho x - y - xz \\
-                    \dot{z} &amp; = -\beta z + x
-                    \end{aligned} \]
-                  </section>           
             </section>
             <section id="secondmenuitem">
                 <section class="center">
                     <h6>Study only as good as data used</h6>
                 </section>
                 <section data-auto-animate>
+                    <h6>Ideally:</h6>
                     <ul>
                         <li style="color: green;">Historical data would be easy to find</li>
                         <li style="color: green;">Countries would have many surveys spanning many years</li>
-                        <li style="color: green;">Original 48 indicators would always be present</li>
+                        <li style="color: green;">Our choice of 46 sociobehavioral indicators would always be present</li>
                     </ul>
                 </section>
                 <section data-auto-animate>
+                    <h6>Reality:</h6>
                     <ul>
                         <li style="color: green;">Historical data would be easy to find</li>
-                        <li style="color: red;">DHS data prior to 2000 can be unreliable</li>
+                        <li style="color: red;">DHS data prior to 2000 was unreliable</li>
                         <li style="color: green;">Countries would have many surveys spanning many years</li>
                         <li style="color: red;">Countries have few and irregularly timed surveys</li>
-                        <li style="color: green;">48 original indicators would always be present</li>
+                        <li style="color: green;">Our choice of 46 sociobehavioral indicators would always be present</li>
                         <li style="color: red;">Many latent/missing values in the surveys</li>
                         <li style="color: red;">Many HIV indicators only started in the early 2000s</li>
                     </ul>
@@ -160,6 +124,14 @@
                         </ul>
                         </li>
                     </ul>
+                    <style>
+                        .colcontainer{
+                            display: flex;
+                        }
+                        .coll{
+                            flex: 1;
+                        }
+                        </style>
                     <div class="colcontainer">
                         <div class="r-frame">
                             <img src="plots/impute_1.png"  height="300" width="800">
@@ -171,8 +143,8 @@
                 <section>
                     <h6>Resulting data</h6>
                     <ul>
-                        <li>Same 29 countries present with each between 1 and 5 surveys between [2000-2018]</li>
-                        <li>46 indicators (2 less because W/M distinction lost when finding alternate source of data)</li>
+                        <li>83 surveys from 29 countries (with each between 1 and 5 surveys between 2000-2018)</li>
+                        <li>46 indicators</li>
                     </ul>
                     <div class="colcontainer">
                         <div class="r-frame">
@@ -185,123 +157,127 @@
             </section>
             <section id="thirdmenuitem">
                 <section>
-                    <h2>Main method (manual)</h2>
+                    <h2>Analysis of sociobehavioral characteristics</h2>
                     <ul>
-                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
-                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
-                        <li>Clustering countries close to each other on PCA space with 5 year sliding window</li>
+                        <li>Reduce dimensionality using Principal Component Analysis</li>
+                        <li>Visualize surveys on the reduced 2 dimensional PCA space</li>
+                        <li>Cluster countries using concensus clustering technique</li>
                     </ul>
                 </section>
-                <section data-background-iframe="plots/PCA_animation.html" data-background-interactive>
-                </section>
-                <section data-background-iframe="plots/box_animation.html" data-background-interactive>
+                <section>
+                    <h2>Analysis of transmission dynamics</h2>
+                        Individual risk of acquiring HIV given by: $\sum_{i=1}^{j} r_{i} * \rho_{i}$<br>
+                        And so<br>
+                        $$\text{New infections[n]} = \beta[n]*\frac{I[n]}{N[n]}*S[n]$$
+                        where:<br>
+                        <ul>
+                            <li>$r$ is ith exposure event</li>
+                            <li>$\rho$ is the chance of that exposure event leading to infection</li>
+                            <li>$S[n] = \text{number of susceptible in given year}$</li>
+                            <li>$I[n] = \text{number of infected in given year}$</li>
+                            <li>$N[n] = \text{total population in given year}$</li>
+                            <li>$\beta[n] = r * \rho = \text{effective contact rate}$</li>
+                        </ul>
                 </section>
                 <section>
-                    <h2>Secondary method (automatic but difficult)</h2>
-                    <ol>
-                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
-                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
-                        <li>Cluster country trajectories</li>
-                    </ol>
-                </section>
-                <section data-background-iframe="plots/country_traj1.html" data-background-interactive></section>
-                <section data-background-iframe="plots/country_traj2.html" data-background-interactive></section>
+                    <h2>Effective contact rate $\beta$</h2>
+                        $$\text{New infections[n]} = \beta[n]*\frac{I[n]}{N[n]}*S[n]$$
+                        Data from UNAIDS gives $HIV_{Incidence}$ in "per 1000" so:
+                        $$HIV_{Incidence}[n] = \text{New infections[n]} * \frac{1000}{N[n]}$$
+                        $$\iff HIV_{Incidence}[n] = \beta[n]\frac{I[n]}{N[n]} \frac{S[n]}{N[n]} * 1000$$                        
+                        $$\beta = \frac{HIV_{Incidence}}{HIV_{Prevalence}*(1-HIV_{Prevalence})}$$                
+                    </section>        
             </section>
             <section id="fourthmenuitem">
                 <section class="center">
-                    <h2>Analysis - 1: Movement on PCA space and HIV incidence</h2>
-                    <ol>
-                        <li>Association between PC-1/PC-2 and HIV incidence</li>
-                        <li>Association between PC-1/PC-2 movement and HIV decrease/increase</li>
-                    </ol>
+                    <h6>Results</h6>
                 </section>
-                <section data-background-iframe="plots/PC1_HIV_country.html" data-background-interactive></section>
-                <section data-background-iframe="plots/PC2_HIV_country.html" data-background-interactive></section>
-                <section class="center">
-                    <ul>
-                        <li>Association between PC-1 and HIV incidence</li>
-                        <li>No association between PC-2 and HIV incidence</li>
-                    </ul>
+                <section>
+                    <img src="images/2_figure1_1.png">
                 </section>
-                <section data-background-iframe="plots/PC1_change_HIV_cluster.html" data-background-interactive></section>
-                <section data-background-iframe="plots/PC2_change_HIV_cluster.html" data-background-interactive></section>
+                <section data-background-iframe="plots/surveys_animation.html" data-background-interactive></section>
+                <section data-background-iframe="plots/surveys0.html" data-background-interactive></section>
+                <section data-background-iframe="plots/surveys1.html" data-background-interactive></section>
+                <section data-background-iframe="plots/surveys2.html" data-background-interactive></section>
+                <section data-background-iframe="plots/surveys3.html" data-background-interactive></section>
                 <section class="center">
-                    <ul>
-                        <li>No association between PC-1 change and HIV incidence</li>
-                        <li>No association between PC-2 change and HIV incidence</li>
-                    </ul>
-                    <ul>
-                        <il class="smallitalic">While a country may move faster to the left on PC-1 than another country, it will not necessarily decrease its HIV incidence faster</il>
-                        <il class="smallitalic">While a country may move faster to the left on PC-1 at certain years than at other years, it will not necessarily decrease its HIV incidence faster during those former years</il>
-                    </ul>
-                    <p>This likely indicates heterogeneity in the indicators that are driving PC-1 to the left, not only between countries, but also within countries but different time frames:</p>
-                </section>
-                <section class="center">
-                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (country level)</h6>
-                    <ul>
-                        <li>HIV incidence decrease for all countries</li>
-                        <li>Any indicator change will create a positive or negative association with HIV incidence</li>
-                        <li>Difficult to see precedence and causality</li>
-                    </ul>
+                    <div class="colcontainer">
+                        <div class="r-frame">
+                            <img src="plots/2_figure_6_ART.png"  height="300" width="800">
+                        </div>
+                        <div class="r-frame">
+                            <img src="plots/2_figure_6_knowledge.png"  height="300" width="800">
+                        </div>
+                    </div>
+                    <div class="colcontainer">
+                        <div class="r-frame">
+                            <img src="plots/2_figure_6_stigma.png"  height="300" width="800">
+                        </div>
+                        <div class="r-frame">
+                            <img src="plots/2_figure_6_testing.png"  height="300" width="800">
+                        </div>
+                    </div>
                 </section>
                 <section class="center">
-                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (cluster level)</h6>
-                    <ul>
-                        <li>Komogrov-Smirnov test - indicators whose distributions have changed significantly over time</li>
-                        <li>Example of Buy.from.shopkeeper.with.AIDS.M</li>
-                    </ul>
-                </section> 
-                <section data-background-iframe="plots/distrib_diff.html" data-background-interactive></section>   
-                <section data-background-iframe="plots/distrib_diff_HIV.html" data-background-interactive></section>
+                    <div class="colcontainer">
+                        <div class="r-frame">
+                            <img src="plots/2_figure_HIVboxplots.png"  height="300" width="800">
+                        </div>
+                        <div class="r-frame">
+                            <img src="plots/2_figure_Betaboxplots.png"  height="300" width="800">
+                        </div>
+                    </div>
+                </section>
                 <section class="center">
-                    <h6>Analysis - 3: Changes in indicator contribution to variance in surveys</h6>
-                    <ul>
-                        <li>Run PCA for each 5 year window</li>
-                        <li>See indicators for which contribution to variance has changed significantly</li>
-                    </ul>
-                </section> 
-                <section data-background-iframe="plots/pca_change.html" data-background-interactive></section>
+                    <img src="images/map1.png" height="900">
+                </section>
                 <section class="center">
-                    <h6>Only 3 seem to increase signifcantly</h6>
-                    <ul>
-                        <li>ART coverage</li>
-                        <li>Ever.receiving.HIV.test.W</li>
-                        <li>Ever.receiving.HIV.test.M</li>
-                    </ul>
-                </section> 
+                    <img src="images/map2.png" height="900">
+                </section>
             </section>
             <section id="fifthmenuitem">
-                <section class="center">
-                    <p>What to make of this?</p>
+                <section>
+                    <h5>Different levels of HIV epidemics seen today unlikely to be a direct result of different evolutions of sociobehavioral characteristics</h5>
                     <ul>
-                        <li>What further analysis is needed?</li>
-                        <li>What message comes out?</li>
-                    </ul>
-                </section>    
-                <section data-auto-animate>
-                    <h1>Slide added after the pres</h1>
-                    <h6>Framing the issue differently</h6>
-                    <ul>
-                        <li style="color: red;">Link between SB characteristics and HIV incidence makes sense for cross-sectional study, not longitudinal study</li>
-                        <li style="color: red;">SB characteristics are overwhelmingly influenced by large increase in ART covergae & HIV testing over time</li>
+                        <li>Difference in levels of HIV incidence across 3 clusters present since early 1990s</li>
+                        <li>Effective contact rate evolved in a similar manner across clusters over same period</li>
                     </ul>
                 </section>
-                <section data-auto-animate>
-                    <h1>Slide added after the pres</h1>
-                    <h6>Framing the issue differently</h6>
+                <section>
+                    <h5>Different levels of HIV epidemics today likely to be the result of different initial conditions in nascent epidemics</h5>
                     <ul>
-                        <li style="color: red;">Link between SB characteristics and HIV incidence makes sense for cross-sectional study, not longitudinal study</li>
-                        <li style="color: green;">Better to look at what SB characteristics contribute to heterogeneity in ART coverage and HIV testing over time</li>
-                        <li style="color: red;">SB characteristics are overwhelmingly influenced by large increase in ART covergae & HIV testing over time</li>
-                        <li style="color: green;">Removing these 3 indicators will show more subtelties in other indicators</li>
+                        <li>Small differences in inital effective contact rate can lead to large differences over course of epidemics</li>
+                        <li>Evidence for this in effective contact rate of 1990</li>
+                        <li>Can be hypothesized male circumcision played a role in reducing effective contact rate in countries with high rates of male circumcision</li>
                     </ul>
                 </section>
-                <section class="center">
-                    <h1>Slide added after the pres</h1>
-                    <h2>Result</h2>
-                    <h6>Use SB characteristics to better target and reach populations for implementation of HIV programs</h6>
-                    <p>Obvisouly, ART coverage, HIV testing are most important in reducing HIV incidence, this study is used to see how SB heterogeneity affects those programs in reaching the various localities and SB contexts.</p>
-                </section>  
+                <section>
+                    <h5>ART coverage and HIV testing likely to bridge the gap across in HIV epidemics</h5>
+                    <ul>
+                        <li>Larger increase in ART coverage and HIV testing since 2005 in countries of Eastern and Southern Africa differences than countries of other 2 clusters</li>
+                        <li>Resulting in faster decrease of effective contact rates of those countries</li>
+                        <li>Over time, will likely lead to faster control of the epidemics in those countries</li>
+                    </ul>
+                </section>
+                <section>
+                    <h5>Further research</h5>
+                    <ul>
+                        <li>Reconstructing effective contact rate prior to 1990</li>
+                        <li>Reconstructing sociobehavrioal profiles of countries prior to 2000</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="sixthmenuitem">
+                <section>
+                    <h5>Limitations</h5>
+                    <ul>
+                        <li>Effective contact rate has the advantage of allowing comparisons across HIV epidemics but relis on both HIV incdence and HIV prevalence which may have large errors</li>
+                        <li>Research has shown using a subset of sociobehavrioal indicators can produce better results</li>
+                        <li>Nationally-aggregated data prone to ecological fallacy</li>
+                        <li>Nationally-aggregated data prone to overlooking salience of high-risk key-populations</li>
+                    </ul>
+                </section>
+
             </section>
         </div>
         <div class="menubar">
@@ -309,8 +285,9 @@
                 <li><a href="#/firstmenuitem">Background</a></li>
                 <li><a href="#/secondmenuitem">Data</a></li>
                 <li><a href="#/thirdmenuitem">Methods</a></li>
-                <li><a href="#/fourthmenuitem">Analysis</a></li>
-                <li><a href="#/fifthmenuitem">What's next</a></li>
+                <li><a href="#/fourthmenuitem">Results</a></li>
+                <li><a href="#/fifthmenuitem">Discussion</a></li>
+                <li><a href="#/sixthmenuitem">Limitations</a></li>
             </ul>
         </div>
     </div>
