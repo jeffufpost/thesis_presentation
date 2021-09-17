@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeffrey Post - Thesis Presentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="Martinomagnifico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="menulogo">
+            <img src="images/unige-logo.svg"  height="70" width="140">
+        </div>
+        <div class="slides">
+            <section class="center" data-transition="fade">
+                <h3>Sociobehavioral characteristics & HIV epidemics</h3>
+                <h4>A longitudinal study in 29 Sub-Saharan African countries</h4>
+                <div class="byline">
+                    <address class="author"><a rel="author" href="https://jeffreypost.dev">Jeffrey Post</a></address>
+                    <time pubdate datetime="2021-09-17" title="September 17th, 2021">September 17th, 2021</time>
+                </div>        
+            </section>
+            <section id="firstmenuitem">
+                <section class="center">
+                    <h6>A longitudinal continuation of original cross-sectional study:</h6>
+                    <img src="images/Cross-Sectional-Vs.-Longitudinal-Study-V01.jpg"  height="310" width="510">
+                    <p>"Clusters of sub-Saharan African countries based on sociobehavioural characteristics and associated HIV incidence"</p>
+                    <p class="small">Aziza Merzouki, Janne Estill, Erol Orel, Kali Tal, Olivia Keiser</p>
+                    <p class="smallitalic"><a href="https://doi.org/10.1101/620450">doi: https://doi.org/10.1101/620450</a></p>
+                </section>
+                <section class="center">
+                    <h6>Review of original cross-sectional study:</h6>
+                    <style> 
+                        .colcontainer{
+                            display: flex;
+                        }
+                        .coll{
+                            flex: 1;
+                        }
+                        </style>
+                        
+                        <div class="colcontainer">
+                        
+                        <div class="r-frame">
+                        <p>Why?</p>
+                        <ul class="small">
+                            <li>Wide variation of HIV incidence in SSA</li>
+                            <li>Substantial SB heterogeneity</li>
+                            <li>Investigate link between the two</li>
+                        </ul>
+                        </div>
+                        
+                        <div class="r-frame">
+                        <p>Methods</p>
+                        <ul class="small">
+                            <li>Most recent DHS data for 29 SSA countries</li>
+                            <li>48 behavioural and HIV related indicators</li>
+                            <li>PCA:
+                                <ul class="smallitalic">
+                                    <li>Visualize country similarities on reduced PCA space</li>
+                                    <li>Identify indicators that contribute most to variance in SB space</li>
+                                </ul>
+                            </li>
+                            <li>Cluster similar countries together</li>
+                            <li>Compare HIV incidence within and between each clusters</li>
+                        </ul>
+                        </div>
+
+                        <div class="r-frame">
+                        <p>Results</p>
+                        <ul class="small">
+                            <li>3 clusters</li>
+                            <li>HIV incidence mostly similar within each cluster</li>
+                            <li>HIV incidence mostly different between each clusters</li>
+                        </ul>
+                        </div>     
+                        </div>                   
+                </section>
+                <section class="center">
+                    <h6>Review of original cross-sectional study (2):</h6>
+                        <div class="colcontainer">
+                        
+                        <div class="r-frame">
+                            <img src="images/hierarchical_clustering_orig.png"  height="310" width="510">
+                        </div>
+                        <div class="r-frame">
+                            <img src="images/box_orig.png"  height="310" width="510">
+                        </div>    
+                        <div class="r-frame">
+                            <img src="images/map_orig.png"  height="310" width="510">
+                        </div>    
+                    </div>                   
+                </section>                
+                <section class="center">
+                    <h6>2 main limitations of cross-sectional study</h6>
+                    <ul>
+                        <li>Nationally-aggregated data prone to ecological fallacy</li>
+                        <li class="r-frame">Impossible to determine precedence and causality between SB characteristics and HIV incidence</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h6>Reason for a longitudinal study</h6>
+                    <ul>
+                        <li>Evolution of those 29 countries over time in SB space</li>
+                        <li>Evolution of HIV incidence over the same period</li>
+                        <li>Explore link between the two</li>
+                    </ul>
+                </section>  
+                <section class="center">
+                    <img src="../ssa_hiv_ml/markdown/writing/2_figure4_1.png">
+                </section>   
+                <section>
+                    <h2>The Lorenz Equations</h2>
+                    \[\begin{aligned}
+                    \dot{x} &amp; = \sigma(y-x) \\
+                    \dot{y} &amp; = \rho x - y - xz \\
+                    \dot{z} &amp; = -\beta z + xy
+                    \end{aligned} \]
+                  </section>           
+            </section>
+            <section id="secondmenuitem">
+                <section class="center">
+                    <h6>Study only as good as data used</h6>
+                </section>
+                <section data-auto-animate>
+                    <ul>
+                        <li style="color: green;">Historical data would be easy to find</li>
+                        <li style="color: green;">Countries would have many surveys spanning many years</li>
+                        <li style="color: green;">Original 48 indicators would always be present</li>
+                    </ul>
+                </section>
+                <section data-auto-animate>
+                    <ul>
+                        <li style="color: green;">Historical data would be easy to find</li>
+                        <li style="color: red;">DHS data prior to 2000 can be unreliable</li>
+                        <li style="color: green;">Countries would have many surveys spanning many years</li>
+                        <li style="color: red;">Countries have few and irregularly timed surveys</li>
+                        <li style="color: green;">48 original indicators would always be present</li>
+                        <li style="color: red;">Many latent/missing values in the surveys</li>
+                        <li style="color: red;">Many HIV indicators only started in the early 2000s</li>
+                    </ul>
+                </section>
+                <section>
+                    <h6>Strategy</h6>
+                    <ul>
+                        <li>Use only surveys from 2000 and later</li>
+                        <li>Missing data
+                            <ul>
+                            <li>Find alternate source for indicator</li>
+                            <li>Impute missing data</li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <div class="colcontainer">
+                        <div class="r-frame">
+                            <img src="plots/impute_1.png"  height="300" width="800">
+                        </div>
+                        <div class="r-frame">
+                            <img src="plots/impute_2.png"  height="300" width="800">
+                        </div>
+                </section>
+                <section>
+                    <h6>Resulting data</h6>
+                    <ul>
+                        <li>Same 29 countries present with each between 1 and 5 surveys between [2000-2018]</li>
+                        <li>46 indicators (2 less because W/M distinction lost when finding alternate source of data)</li>
+                    </ul>
+                    <div class="colcontainer">
+                        <div class="r-frame">
+                            <img src="plots/surveys_per_year.png"  height="300" width="800">
+                        </div>
+                        <div class="r-frame">
+                            <img src="plots/surveys_per_country.png"  height="300" width="800">
+                        </div>
+                </section>
+            </section>
+            <section id="thirdmenuitem">
+                <section>
+                    <h2>Main method (manual)</h2>
+                    <ul>
+                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
+                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
+                        <li>Clustering countries close to each other on PCA space with 5 year sliding window</li>
+                    </ul>
+                </section>
+                <section data-background-iframe="plots/PCA_animation.html" data-background-interactive>
+                </section>
+                <section data-background-iframe="plots/box_animation.html" data-background-interactive>
+                </section>
+                <section>
+                    <h2>Secondary method (automatic but difficult)</h2>
+                    <ol>
+                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
+                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
+                        <li>Cluster country trajectories</li>
+                    </ol>
+                </section>
+                <section data-background-iframe="plots/country_traj1.html" data-background-interactive></section>
+                <section data-background-iframe="plots/country_traj2.html" data-background-interactive></section>
+            </section>
+            <section id="fourthmenuitem">
+                <section class="center">
+                    <h2>Analysis - 1: Movement on PCA space and HIV incidence</h2>
+                    <ol>
+                        <li>Association between PC-1/PC-2 and HIV incidence</li>
+                        <li>Association between PC-1/PC-2 movement and HIV decrease/increase</li>
+                    </ol>
+                </section>
+                <section data-background-iframe="plots/PC1_HIV_country.html" data-background-interactive></section>
+                <section data-background-iframe="plots/PC2_HIV_country.html" data-background-interactive></section>
+                <section class="center">
+                    <ul>
+                        <li>Association between PC-1 and HIV incidence</li>
+                        <li>No association between PC-2 and HIV incidence</li>
+                    </ul>
+                </section>
+                <section data-background-iframe="plots/PC1_change_HIV_cluster.html" data-background-interactive></section>
+                <section data-background-iframe="plots/PC2_change_HIV_cluster.html" data-background-interactive></section>
+                <section class="center">
+                    <ul>
+                        <li>No association between PC-1 change and HIV incidence</li>
+                        <li>No association between PC-2 change and HIV incidence</li>
+                    </ul>
+                    <ul>
+                        <il class="smallitalic">While a country may move faster to the left on PC-1 than another country, it will not necessarily decrease its HIV incidence faster</il>
+                        <il class="smallitalic">While a country may move faster to the left on PC-1 at certain years than at other years, it will not necessarily decrease its HIV incidence faster during those former years</il>
+                    </ul>
+                    <p>This likely indicates heterogeneity in the indicators that are driving PC-1 to the left, not only between countries, but also within countries but different time frames:</p>
+                </section>
+                <section class="center">
+                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (country level)</h6>
+                    <ul>
+                        <li>HIV incidence decrease for all countries</li>
+                        <li>Any indicator change will create a positive or negative association with HIV incidence</li>
+                        <li>Difficult to see precedence and causality</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (cluster level)</h6>
+                    <ul>
+                        <li>Komogrov-Smirnov test - indicators whose distributions have changed significantly over time</li>
+                        <li>Example of Buy.from.shopkeeper.with.AIDS.M</li>
+                    </ul>
+                </section> 
+                <section data-background-iframe="plots/distrib_diff.html" data-background-interactive></section>   
+                <section data-background-iframe="plots/distrib_diff_HIV.html" data-background-interactive></section>
+                <section class="center">
+                    <h6>Analysis - 3: Changes in indicator contribution to variance in surveys</h6>
+                    <ul>
+                        <li>Run PCA for each 5 year window</li>
+                        <li>See indicators for which contribution to variance has changed significantly</li>
+                    </ul>
+                </section> 
+                <section data-background-iframe="plots/pca_change.html" data-background-interactive></section>
+                <section class="center">
+                    <h6>Only 3 seem to increase signifcantly</h6>
+                    <ul>
+                        <li>ART coverage</li>
+                        <li>Ever.receiving.HIV.test.W</li>
+                        <li>Ever.receiving.HIV.test.M</li>
+                    </ul>
+                </section> 
+            </section>
+            <section id="fifthmenuitem">
+                <section class="center">
+                    <p>What to make of this?</p>
+                    <ul>
+                        <li>What further analysis is needed?</li>
+                        <li>What message comes out?</li>
+                    </ul>
+                </section>    
+                <section data-auto-animate>
+                    <h1>Slide added after the pres</h1>
+                    <h6>Framing the issue differently</h6>
+                    <ul>
+                        <li style="color: red;">Link between SB characteristics and HIV incidence makes sense for cross-sectional study, not longitudinal study</li>
+                        <li style="color: red;">SB characteristics are overwhelmingly influenced by large increase in ART covergae & HIV testing over time</li>
+                    </ul>
+                </section>
+                <section data-auto-animate>
+                    <h1>Slide added after the pres</h1>
+                    <h6>Framing the issue differently</h6>
+                    <ul>
+                        <li style="color: red;">Link between SB characteristics and HIV incidence makes sense for cross-sectional study, not longitudinal study</li>
+                        <li style="color: green;">Better to look at what SB characteristics contribute to heterogeneity in ART coverage and HIV testing over time</li>
+                        <li style="color: red;">SB characteristics are overwhelmingly influenced by large increase in ART covergae & HIV testing over time</li>
+                        <li style="color: green;">Removing these 3 indicators will show more subtelties in other indicators</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h1>Slide added after the pres</h1>
+                    <h2>Result</h2>
+                    <h6>Use SB characteristics to better target and reach populations for implementation of HIV programs</h6>
+                    <p>Obvisouly, ART coverage, HIV testing are most important in reducing HIV incidence, this study is used to see how SB heterogeneity affects those programs in reaching the various localities and SB contexts.</p>
+                </section>  
+            </section>
+        </div>
+        <div class="menubar">
+            <ul class="menu">
+                <li><a href="#/firstmenuitem">Background</a></li>
+                <li><a href="#/secondmenuitem">Data</a></li>
+                <li><a href="#/thirdmenuitem">Methods</a></li>
+                <li><a href="#/fourthmenuitem">Analysis</a></li>
+                <li><a href="#/fifthmenuitem">What's next</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/zoom/zoom.js"></script>
+    <script src="plugin/simplemenu/simplemenu.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.3/plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                // pass other options into `MathJax.Hub.Config()`
+                TeX: { Macros: { RR: "{\\bf R}" } }
+            },
+            transition: "convex",
+            width: 1600,
+            height:800,
+            slideNumber: 'h.v',
+            plugins: [
+                Simplemenu,
+                RevealHighlight,
+                RevealZoom,
+                RevealMath
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
